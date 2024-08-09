@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+header{
+    
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    background-image: url(./images/bg-header-desktop.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h2,h3,h4{
+    color: #495057;
+}
+p{
+    color: #868e96;
+}
+.header-logo{
+    padding: 48px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header-features{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.header-features h1{
+    font-weight: 600;
+    color: #495057;
+    font-size: 42px;
+}
+.header-features p{
+    width: 475px;
+    margin-bottom: 16px;
+    color: #868e96;
+}
+.btn-ios,.btn-mac{
+display: inline-block;
+/* border: 1px solid; */
+color: #fff;
+text-decoration: none;
+padding: 12px 24px;
+border-radius: 32px;
+font-size: 14px;
+}
+.btn-ios{
+    background-color: rgb(38, 186, 164);
+    margin-right: 8px;
+    box-shadow: 0 12px 20px rgba(38, 186, 164, 0.380);
+}
+.btn-mac{
+    background-color: rgb(97, 115, 255);
+    box-shadow: 0 12px 20px rgba(97, 115, 255, 0.380);
+}
+.hero-container{
+    /* height: 100vh; */
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 50px 70px 1fr;
+row-gap: 32px;
+align-items: center;
+justify-items: center;
+padding: 0 32px;
+}
+.hero-container h2{
+grid-column: 1/-1;
+grid-row: 1/2;
+/* justify-self: center; */
+}
+.hero-txt{
+grid-column: 1/-1;
+grid-row: 2/3;
+width: 610px;
+text-align: center;
+margin-bottom: 48px;
+}
+.img-computer{
+grid-column: 1/2;
+grid-row: 3/4;
+width: 620px;
+height: auto;
+}
+.hero-container ul{
+    justify-self: start;
+    list-style: none;
+grid-column: 2/-1;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+padding-left: 96px;
+}
+.hero-container ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.hero-container ul li p{
+width: 340px;
+line-height: 1.8;
+}
+.access-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    margin: 80px auto;
+}
+.access-container p{
+    width: 595px;
+}
+.access-img{
+    width: 700px;
+    height: auto;
+    margin-top: 80px;
+}
+.features-container{
+    width: 1100px;
+    height: 300px;
+    align-self: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,342px);
+    grid-template-rows: 30px 30px 1fr;
+    row-gap: 24px;
+    column-gap: 48px;
+}
+.features-container h2{
+    grid-column: 1/-1;
+}
+.features-container p{
+    grid-column: 1/-1;
+}
+.box{
+    align-self: center;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 24px;
+}
+.box:nth-child(4),.box:nth-child(5){
+padding-top: 8px;
+}
+.customers{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 112px;
+margin-top: 80px;
+}
+.header-features:last-child{
+    background-image: none;
+}
+.software{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+.software p{
+width: 600px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 160px;
+    background-color: #F5F6F8;
+    flex-shrink: 1;
+    flex-grow: 0;
+
+}
+.socials{
+    display: flex;
+    gap: 24px;
+}
+.footer-logo{
+    width: 60px;
+}
+.footer-logo img{
+    max-width: 100%;
+}
+.footer nav{
+font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 16px;
+    column-gap: 48px;
+}
+.footer-nav{
+    display: inline-block;
+    color: #868e96;
+    text-decoration: none;
+}
+.footer-nav:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.footer-nav:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.footer-nav:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.footer-nav:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
